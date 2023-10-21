@@ -1,0 +1,50 @@
+---
+1;
+import ItemNavigation from "./ItemNavigation.astro";
+---
+
+<header
+  class="flex justify-between items-center max-w-5xl mx-auto py-8 px-4 lg:py-16 lg:px-6"
+>
+  <a href="/" class="flex items-center gap-2 font-semibold">
+    <svg class="w-12" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#3b82f6"
+        d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+      ></path>
+    </svg>
+     BH
+  </a>
+
+  <input type="checkbox" id="menu" class="hidden peer/menu" />
+
+  <!-- Open -->
+  <label
+    for="menu"
+    class="absolute right-4 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-0 z-20 fill-black dark:fill-white"
+  >
+    <svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 4h18v2H3V4Zm6 7h12v2H9v-2Zm-6 7h18v2H3v-2Z"></path>
+    </svg>
+  </label>
+
+  <!-- Close -->
+  <label
+    for="menu"
+    class="absolute right-4 opacity-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-100 z-20 fill-black dark:fill-white"
+  >
+    <svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6L6.4 19Z"
+      ></path>
+    </svg>
+  </label>
+
+  <nav
+    class="grid place-content-center gap-4 fixed py-24 px-6 w-full right-0 top-0 bottom-0 bg-black z-10 opacity-0 pointer-events-none peer-checked/menu:opacity-100 pointer-[unset] transition-opacity duration-300"
+  >
+    <ItemNavigation>Home</ItemNavigation>
+    <ItemNavigation>Proyectos</ItemNavigation>
+    <ItemNavigation>Blog</ItemNavigation>
+  </nav>
+</header>
