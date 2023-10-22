@@ -1,6 +1,14 @@
+---
+interface Props {
+  redirect: string;
+}
+
+const { redirect } = Astro.props;
+---
+
 <a
-  href="/"
-  class="flex items-center gap-2 font-semibold cursor-pointer border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 lg:text-lg"
+  href={redirect}
+  class="font-semibold cursor-pointer border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 lg:text-lg"
 >
   <slot />
 </a>

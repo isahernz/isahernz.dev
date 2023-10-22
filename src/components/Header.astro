@@ -43,14 +43,14 @@ import ItemNavigationMobi from "./ItemNavigationMobi.astro";
   <nav
     class="grid place-content-center gap-6 fixed py-24 px-6 w-full right-0 top-0 bottom-0 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 z-10 opacity-0 pointer-events-none peer-checked/menu:opacity-100 peer-checked/menu:pointer-events-auto transition-opacity duration-300 sm:hidden"
   >
-    <ItemNavigationMobi>Home</ItemNavigationMobi>
-    <ItemNavigationMobi>Proyectos</ItemNavigationMobi>
-    <ItemNavigationMobi>Blog</ItemNavigationMobi>
+    <ItemNavigationMobi redirect="/">Home</ItemNavigationMobi>
+    <ItemNavigationMobi redirect="/projects">Proyectos</ItemNavigationMobi>
+    <ItemNavigationMobi redirect="/blog/">Blog</ItemNavigationMobi>
   </nav>
 
-  <nav class="flex items-center gap-4 max-sm:hidden">
-    <ItemNavigationDesk>Home</ItemNavigationDesk>
-    <ItemNavigationDesk>Proyectos</ItemNavigationDesk>
-    <ItemNavigationDesk>Blog</ItemNavigationDesk>
+  <nav class="flex items-center gap-6 max-sm:hidden">
+    <ItemNavigationDesk redirect="/">Home</ItemNavigationDesk>
+    <ItemNavigationDesk redirect="/projects">Proyectos</ItemNavigationDesk>
+    <ItemNavigationDesk redirect="/blog/">Blog</ItemNavigationDesk>
   </nav>
 </header>
