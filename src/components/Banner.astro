@@ -1,10 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import profile from "../../public/brandonhernandez.jpg";
+import myPhotoSrc from "../../public/brandonhernandez.jpg";
 ---
 
 <section
-  class="flex flex-col items-center my-8 sm:my-12 lg:flex-row lg:items-center"
+  class="flex flex-col items-center my-8 px-4 sm:my-14 lg:flex-row lg:items-center lg:px-0"
 >
   <div class="flex flex-col gap-4 text-center lg:text-left lg:flex-1">
     <h1 class="text-2xl font-extrabold sm:text-4xl lg:text-6xl">
@@ -17,8 +17,8 @@ import profile from "../../public/brandonhernandez.jpg";
     </p>
     <p class="text-sm font-light sm:text-base lg:text-lg max-w-lg">
       Programador por las noches y estudiante de ingeniería por las mañanas.
-      Apasionado por aprender cada día nuevas cosas sobre el mundo Tech y la
-      vida.
+      Apasionado por el aprender cosas nuevas del día a día sobre el mundo de la
+      tecnología y la vida. 🍂
     </p>
 
     <div class="flex items-center gap-6 pt-4 max-lg:hidden">
@@ -58,11 +58,7 @@ import profile from "../../public/brandonhernandez.jpg";
         </figure>
       </a>
 
-      <a
-        href="https://twitter.com/bran_hecam"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://twitter.com/bran_hecam" target="_blank" rel="noreferrer">
         <figure>
           <svg
             class="text-gray-400 cursor-pointer fill-current h-7 w-7 hover:text-black"
@@ -97,8 +93,8 @@ import profile from "../../public/brandonhernandez.jpg";
   <figure class="mt-6 lg:mt-0">
     <Image
       class="w-48 h-48 sm:w-60 sm:h-60 rounded-full"
-      src={profile}
-      alt="Brandon Isahir Hernández"
+      src={myPhotoSrc}
+      alt="Brandon Isahir Hernández Camacho"
     />
   </figure>
 </section>
