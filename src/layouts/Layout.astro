@@ -29,7 +29,7 @@ const { title } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;900&family=Lexend:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>
@@ -39,14 +39,9 @@ const { title } = Astro.props;
     class="flex flex-col px-4 mx-auto min-h-screen sm:max-w-xl lg:max-w-4xl lg:px-0 xl:max-w-5xl"
   >
     <Header />
-    <main class="grow">
+    <main class="flex flex-col place-content-center grow shrink-0">
       <slot />
     </main>
     <Footer />
-    <style is:global>
-      html {
-        font-family: "Lexend", system-ui, sans-serif;
-      }
-    </style>
   </body>
 </html>
