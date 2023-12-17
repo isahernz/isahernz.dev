@@ -3,10 +3,8 @@ import ItemNavigationDesk from "./ItemNavigationDesk.astro";
 import ItemNavigationMobi from "./ItemNavigationMobi.astro";
 ---
 
-<header
-  class="flex justify-between items-center py-8 px-4 relative lg:py-16 lg:px-0"
->
-  <a href="/" class="flex items-center gap-2 font-semibold">
+<header class="flex justify-between items-center p-4 relative mt-4">
+  <a href="/" class="flex items-center gap-2 text-lg font-extrabold">
     <svg class="w-12" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
       <path
         fill="#3b82f6"
@@ -21,9 +19,13 @@ import ItemNavigationMobi from "./ItemNavigationMobi.astro";
   <!-- Open -->
   <label
     for="menu"
-    class="block absolute right-4 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-0 z-20 fill-black dark:fill-white sm:hidden"
+    class="block absolute right-4 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-0 z-20 dark:fill-white sm:hidden"
   >
-    <svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      class="w-8 h-8 fill-black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path d="M3 4h18v2H3V4Zm6 7h12v2H9v-2Zm-6 7h18v2H3v-2Z"></path>
     </svg>
   </label>
@@ -31,9 +33,13 @@ import ItemNavigationMobi from "./ItemNavigationMobi.astro";
   <!-- Close -->
   <label
     for="menu"
-    class="absolute right-4 opacity-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-100 z-20 fill-white dark:fill-white sm:hidden"
+    class="absolute right-4 opacity-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-100 z-20 dark:fill-white sm:hidden"
   >
-    <svg class="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      class="w-8 h-8 fill-black"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6L6.4 19Z"
       ></path>
