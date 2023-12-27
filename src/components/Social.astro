@@ -8,7 +8,8 @@ const { platform, username } = Astro.props;
 ---
 
 <a
-  class="flex justify-center items-center gap-2 rounded-md border border-black px-4 py-2 text-sm font-medium bg-white/5 hover:text-white hover:bg-black hover:fill-white transition-colors duration-200 transform dark:border-white dark:text-white dark:fill-white dark:hover:bg-white dark:hover:text-black dark:hover:fill-black"
+  class="flex justify-center items-center gap-2 rounded-md px-4 py-2 text-sm font-medium border border-white/10 bg-white/5 text-white fill-white transition
+    hover:scale-110 hover:bg-white/10"
   href={`https://www.${platform}.com/${username}`}
   target="_blank"
   rel="noopener noreferrer"
