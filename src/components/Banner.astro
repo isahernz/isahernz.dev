@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import Social from "@components/Social.astro";
 import sourcePhoto from "@assets/images/brandonhernandez.jpg";
+import GitHub from "@icons/GitHub.astro";
+import Twitter from "@icons/Twitter.astro";
 ---
 
 <section
@@ -34,25 +36,12 @@ import sourcePhoto from "@assets/images/brandonhernandez.jpg";
 
     <div class="flex justify-center items-center gap-4 mt-4 lg:justify-start">
       <Social platform="github" username="BrandonHeCam">
-        <svg
-          class="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 256 256"
-          ><path
-            d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32ZM200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.81 43.81 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.81 43.81 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.72 41.72 0 0 1 7 22.52Z"
-          ></path></svg
-        >
+        <GitHub class="size-4 md:size-6" />
+         GitHub
       </Social>
-
       <Social platform="twitter" username="brandon_hecam">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
-          viewBox="0 0 16 16"
-          ><path
-            d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05L9.294 6.928ZM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843l-3.664-5.28Z"
-          ></path></svg
-        >
+        <Twitter class="size-4 md:size-6" />
+         Twitter
       </Social>
     </div>
   </div>
