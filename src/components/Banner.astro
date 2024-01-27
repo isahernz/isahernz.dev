@@ -9,37 +9,39 @@ import Twitter from "@icons/Twitter.astro";
 <section
   class="flex flex-col justify-center items-center my-8 sm:my-14 lg:flex-row-reverse lg:items-center"
 >
-  <figure class="mb-4 lg:mt-0">
+  <figure class="relative rounded-full overflow-hidden p-1 mb-4 lg:mt-0">
+    <span
+      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+    >
+    </span>
     <Image
-      class="w-48 h-48 rounded-full sm:w-60 sm:h-60"
+      class="w-48 h-48 backdrop-blur-3xl rounded-full sm:w-60 sm:h-60"
       src={sourcePhoto}
       alt="Brandon Isahir Hernández Camacho"
     />
   </figure>
 
   <div class="flex flex-col gap-4 text-center px-4 lg:text-left lg:flex-1">
-    <h1 class="text-2xl font-extrabold sm:text-4xl lg:text-6xl text-white">
+    <h1
+      class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl lg:text-balance text-white"
+    >
       Brandon Isahir Hernández Camacho
     </h1>
-    <p
-      class="text-xl font-extrabold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent max-w-xl sm:text-2xl lg:text-3xl"
-    >
-      Full Stack Developer
-    </p>
-    <p
-      class="leading-5 text-pretty max-w-lg sm:text-base lg:text-lg text-white"
-    >
-      Programador por las noches y estudiante de ingeniería por las mañanas.
-      Apasionado por el aprender cosas nuevas del día a día sobre el mundo de la
-      tecnología y la vida. 🍂
-    </p>
+
+    <h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-white">
+      <span>+2 años de experiencia.</span>
+      <span class="text-yellow-200">
+        Desarrollador Web y Estudiante de Ingeniería en Sistemas</span
+      >.
+      <span class="text-red-200"> De Puebla, México</span>
+    </h2>
 
     <div class="flex justify-center items-center gap-4 mt-4 lg:justify-start">
       <Social platform="github" username="isahernz">
         <GitHub class="size-4 md:size-6" />
         GitHub
       </Social>
-      <Social platform="twitter" username="isahernz">
+      <Social platform="twitter" username="_isahernz">
         <Twitter class="size-4 md:size-6" />
         Twitter
       </Social>
