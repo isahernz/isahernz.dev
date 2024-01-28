@@ -6,17 +6,17 @@ import HamburgerIcon from "@components/icons/Hamburger.astro";
 import CloseIcon from "@components/icons/Close.astro";
 ---
 
-<header class="flex justify-between items-center p-4 relative mt-4">
+<header class="flex justify-between items-center relative mt-8">
   <a href="/" class="flex items-center gap-2 text-lg font-extrabold text-white">
     <CodeIcon />
-     BH</a
+    BH</a
   >
   <input type="checkbox" id="menu" class="hidden peer/menu" />
 
   <!-- Open -->
   <label
     for="menu"
-    class="block absolute right-4 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-0 z-20 sm:hidden"
+    class="block absolute right-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-0 z-20 sm:hidden"
   >
     <HamburgerIcon class="size-8 fill-white" />
   </label>
@@ -24,7 +24,7 @@ import CloseIcon from "@components/icons/Close.astro";
   <!-- Close -->
   <label
     for="menu"
-    class="absolute right-4 opacity-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-100 z-20 sm:hidden"
+    class="absolute right-0 opacity-0 cursor-pointer transition-opacity duration-500 peer-checked/menu:opacity-100 z-20 sm:hidden"
   >
     <CloseIcon class="size-8 fill-white" />
   </label>
