@@ -2,7 +2,6 @@
 import Layout from "@layouts/Layout.astro";
 import Briefcase from "@components/icons/Briefcase.astro";
 import Banner from "@components/Banner.astro";
-import SectionContainer from "@components/SectionContainer.astro";
 import Experience from "@components/Experience.astro";
 ---
 
@@ -10,7 +9,7 @@ import Experience from "@components/Experience.astro";
   <main class="py-20 lg:py-36">
     <Banner />
   </main>
-  <SectionContainer>
+  <section class="md:max-w-3xl">
     <h2
       class="text-xl lg:text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white"
     >
@@ -18,5 +17,5 @@ import Experience from "@components/Experience.astro";
       Experiencia
     </h2>
     <Experience />
-  </SectionContainer>
+  </section>
 </Layout>
