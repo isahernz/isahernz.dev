@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "@components/ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title:
+      "Estudiante de Ingeniería en Sistemas y Tecnologías de la Información Industrial - BUAP",
+    description:
+      "Alumno del 6to semestre de ingenería, desarrollando proyectos reales sobre las nuevas tendencias tecnologicas, colaborando con empresas del sector tecnologíco.",
+  },
+  {
+    date: "Septiembre 2023",
+    title: "XV edición de la feria de proyectos FEPRO 2023 ",
+    description:
+      'Integrante del equipo ganador en la categoría de "Aplicaciones Básicas" mediante la concepción y desarrollo del proyecto "Tienda Online: Un Toque de Magia."',
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
