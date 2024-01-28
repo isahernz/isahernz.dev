@@ -1,8 +1,22 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Briefcase from "@components/icons/Briefcase.astro";
 import Banner from "@components/Banner.astro";
+import SectionContainer from "@components/SectionContainer.astro";
+import Experience from "@components/Experience.astro";
 ---
 
 <Layout title="Brandon Isahir Hernández Camacho - Full Stack Developer">
-  <Banner />
+  <main class="py-20 lg:py-36">
+    <Banner />
+  </main>
+  <SectionContainer>
+    <h2
+      class="text-xl lg:text-3xl font-semibold mb-6 flex gap-x-3 items-center"
+    >
+      <Briefcase class="size-6" />
+      Experiencia
+    </h2>
+    <Experience />
+  </SectionContainer>
 </Layout>
